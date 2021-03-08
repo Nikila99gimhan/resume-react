@@ -16,33 +16,25 @@ const CostomTimeline = ({ title, icon, children }) => {
       {/*Item Header */}
       <TimelineItem className={"timeline_firstitem"}>
         <TimelineSeparator>
-          <TimelineDot className={"timeline_dot_header"}>
-            {<WorkIcon />}
-          </TimelineDot>
+          <TimelineDot className={"timeline_dot_header"}>{icon}</TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
           <Typography variant="h6" className={"timeline_header"}>
-            {"title"}
+            {title}
           </Typography>
         </TimelineContent>
       </TimelineItem>
-
       {children}
-
-      {/*Remaining Items */}
-      <TimelineItem>
-        <CostomTimelineSeparator />
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
     </Timeline>
   );
 };
 
 export const CostomTimelineSeparator = () => (
   <TimelineSeparator className={"separator_padding"}>
-    <TimelineDot className={"timelinee_dot"} />
+    <TimelineDot variant={"outlined"} className={"timeline_dot"} />
     <TimelineConnector />
   </TimelineSeparator>
 );
+
 export default CostomTimeline;
