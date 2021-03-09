@@ -7,20 +7,22 @@ import resumeData from "../../utils/resumeData";
 import PersonOutlineOutLinedIcon from "@material-ui/icons/PersonOutlineOutlined";
 import "./Profile.css";
 import TimelineContent from "@material-ui/lab/TimelineContent";
+import CostomButton from "../Button/Button";
+import GetAppIcon from "@material-ui/icons/GetApp";
 
 const CostomTimelineItem = ({ title, text, link }) => (
   <TimelineItem>
     <CostomTimelineSeparator />
-    <TimelineContent>
+    <TimelineContent className="timeline_content">
       {link ? (
-        <Typography>
+        <Typography className="timelineItem_text">
           <span>{title}:</span>{" "}
           <a href={link} target="_blank">
             {text}
           </a>
         </Typography>
       ) : (
-        <Typography>
+        <Typography className="timelineItem_text">
           <span>{title}:</span>
           {text}
         </Typography>
@@ -43,10 +45,23 @@ const Portfolio = () => {
         <CostomTimeline icon={<PersonOutlineOutLinedIcon />}>
           <CostomTimelineItem title="Name" text={resumeData.name} />
           <CostomTimelineItem title="Title" text={resumeData.title} />
-          <CostomTimelineItem title="Email" text={resumeData.email} />
+          <CostomTimelineItem
+            className="special_fontsize"
+            title="Email"
+            text={resumeData.email}
+          />
+
+          {Object.keys(resumeData.socials).map((key) => (
+            <CostomTimelineItem
+              title={key}
+              text={resumeData.socials[key].text}
+              link={resumeData.socials[key].link}
+            />
+          ))}
         </CostomTimeline>
-        <br />
-        <button>my Button</button>
+        <div className="button_container">
+          <CostomButton text={"Download CV"} icon={<GetAppIcon />} />
+        </div>
       </div>
     </div>
   );
