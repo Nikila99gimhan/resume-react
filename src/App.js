@@ -17,7 +17,7 @@ function App() {
         <Grid item xs={12} sm={12} lg={3}>
           <Profile />
         </Grid>
-        <Grid item xs style={{ backgroundColor: "red" }}>
+        <Grid item xs >
           <Header />
           <Router>
             <Switch>
