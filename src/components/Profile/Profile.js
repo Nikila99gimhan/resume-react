@@ -1,6 +1,6 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
-import myImage from "../../assets/images/profile.jpg";
+import myImage from "../../assets/images/profile03.jpg";
 import CostomTimeline, { CostomTimelineSeparator } from "../Timeline/Timeline";
 import TimelineItem from "@material-ui/lab/TimelineItem";
 import resumeData from "../../utils/resumeData";
