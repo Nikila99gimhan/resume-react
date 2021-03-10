@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
         <div className="footer_right">
           <Typography className="footer_copyright">
-            Designed and Developed by <a href="/" traget='_blank'>Nikila Fernando</a>
+            Designed and Developed by <a href="https://www.linkedin.com/in/nikila-fernando-47ba811b0/" traget='_blank'>Nikila Fernando</a>
             <br />
               Clone idea from <a href="http://tavonline.net/html/mat/default/index.html#" target='_blank'>Travonline</a>.
           </Typography>

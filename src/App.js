@@ -20,6 +20,7 @@ function App() {
         <Grid item xs >
           <Router>
           <Header />
+          <diV className="main_content container_shadow">
             <Switch>
               <Route path="/portfolio">
                 <Portfolio />
@@ -28,6 +29,8 @@ function App() {
                 <Resume />
               </Route>
             </Switch>
+          </diV>
+
           </Router>
 
           <Footer />

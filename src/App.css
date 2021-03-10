@@ -17,3 +17,13 @@
   -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
   -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
 }
+.main_content{
+  background-color: white;
+  min-height: 100vh;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  margin-bottom:30px ;
+
+
+}
