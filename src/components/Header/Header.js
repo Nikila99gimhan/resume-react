@@ -5,6 +5,7 @@ import{Link,NavLink,withRouter} from "react-router-dom";
 import {HomeRounded, Telegram} from "@material-ui/icons";
 import resumeData from "../../utils/resumeData";
 import CostomButton from "../Button/Button";
+import "./Header.css";
 
 
 
