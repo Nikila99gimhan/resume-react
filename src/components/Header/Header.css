@@ -5,6 +5,9 @@
     border-radius: 6px !important;
     box-shadow: 0px 2px 92px 0px rgba(0,0,0,0.07) !important;
 }
+.header .header_navlink{
+    padding: 0;
+}
 .header .header_link{
     font-weight: 500;
     color: darkslategray !important;
@@ -23,8 +26,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: inherit;
-    border-bottom-left-radius: inherit;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.header .header_left{
+    margin-right: auto;
+
 }
 .header .header_right{
     display: flex !important;
@@ -34,5 +41,4 @@
     font-size: 16px !important;
     margin-right: 12px;
     color: black;
-
 }
