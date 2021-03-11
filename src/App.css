@@ -24,6 +24,26 @@
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   margin-bottom:30px ;
-
-
+  padding: 30px;
 }
+.section_title{
+  position: relative;
+  display: inline-block;
+  padding:0 3px;
+}
+.section_title > h6{
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+.section_title span{
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  bottom: 0;
+  opacity: 0.4;
+  left: 0;
+  margin-top: 0;
+  background-color: var(--main-color);
+}
+
