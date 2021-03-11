@@ -12,7 +12,7 @@ const Resume = () => {
         <Grid container className=''>
             <Grid item className='section_title' >
                 <span></span>
-                <h6>About Me</h6>
+                <h6>About Me hoohooo </h6>
             </Grid>
             <Grid item xs={12}>
                 <Typography className={'aboutme_text'}>{resumeData.about}</Typography>
