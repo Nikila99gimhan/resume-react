@@ -1,0 +1,7 @@
+/*About section */
+.aboutme_text{
+    color: darkslategrey;
+    font: smaller;
+    line-height: 22px !important;
+    white-space: pre-line !important;
+}

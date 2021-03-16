@@ -9,19 +9,24 @@ const Resume = () => {
       <>
         {/* About me*/}
 
-        <Grid container className=''>
-            <Grid item className='section_title' >
+        <Grid container className='section pb_45'>
+            <Grid item className='section_title mb-30' >
                 <span></span>
-                <h6>About Me hoohooo </h6>
+                <h6 className={'section_title_text'}>About Me </h6>
             </Grid>
             <Grid item xs={12}>
-                <Typography className={'aboutme_text'}>{resumeData.about}</Typography>
+                <Typography variant={'body2'} className={'aboutme_text'}>{resumeData.about}</Typography>
             </Grid>
         </Grid>
 
 
           {/* Educational And Experiences*/}
-        <Grid container className='section'></Grid>
+        <Grid container className='section'>
+            <Grid item className='section_title mb-30' >
+                <span></span>
+                <h6 className={'section_title_text'}>Resume </h6>
+            </Grid>
+        </Grid>
 
         {/* Services*/}
 
