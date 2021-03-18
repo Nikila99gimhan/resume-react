@@ -4,6 +4,7 @@ import {Grid, Typography} from "@material-ui/core";
 import resumeData from "../../utils/resumeData";
 import CostomTimeline, { CostomTimelineSeparator } from "../../components/Timeline/Timeline";
 import WorkIcon from '@material-ui/icons/Work';
+import SchoolIcon from '@material-ui/icons/School';
 
 import {TimelineContent, TimelineDot, TimelineItem, TimelineSeparator} from "@material-ui/lab";
 
@@ -51,7 +52,7 @@ const Resume = () => {
 
                     { /*Educational*/}
                     <Grid item sm={12} md={6}>
-                        <CostomTimeline title={'Education'} icon={<WorkIcon />}>
+                        <CostomTimeline title={'Education'} icon={<SchoolIcon />}>
                             {resumeData.Education.map((Education) =>(
                                 <TimelineItem>
                                     <CostomTimelineSeparator />
