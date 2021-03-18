@@ -1,3 +1,13 @@
+# Personal Resume
+
+![screenshot-localhost_3000-2021 03 18-13_34_35](https://user-images.githubusercontent.com/64256212/111592499-dfb3c980-87ee-11eb-8389-39077af5aa19.png)
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
