@@ -5,6 +5,8 @@ import resumeData from "../../utils/resumeData";
 import CostomTimeline, { CostomTimelineSeparator } from "../../components/Timeline/Timeline";
 import WorkIcon from '@material-ui/icons/Work';
 
+import {TimelineContent, TimelineDot, TimelineItem, TimelineSeparator} from "@material-ui/lab";
+
 const Resume = () => {
   return (
 
@@ -32,7 +34,19 @@ const Resume = () => {
                 <Grid container>
                     { /*Working and Volunteering Experiences  */}
                     <Grid item sm={12} md={6}>
-                        <CostomTimeline title={'Work and Volunteering'} icon={<WorkIcon />}></CostomTimeline>
+                        <CostomTimeline title={'Work and Volunteering'} icon={<WorkIcon />}>
+                            {resumeData.Experiences.map((Experiences) =>(
+                                <TimelineItem>
+                                    <CostomTimelineSeparator />
+                                    <TimelineContent>
+                                        <Typography  className={'timeline_title'}>{Experiences.title}</Typography>
+                                        <Typography variant={"caption"} className={'timeline_date'}>{Experiences.date}</Typography>
+                                        <Typography variant={"body2"} className={'timeline_description'}>{Experiences.description}</Typography>
+                                    </TimelineContent>
+
+                                </TimelineItem>
+                            ))}
+                        </CostomTimeline>
                     </Grid>
 
                     { /*Educational*/}

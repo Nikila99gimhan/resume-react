@@ -35,14 +35,40 @@ export default {
   },
 
   about:"Hi! My name is Nikila Fernando , I am a second-year Computer Science student at NSBM Green University SriLanka.Started earnest brother believe an exposed so. Me he believing daughters if forfeited at furniture. Age again and stuff downs spoke. Late hour new nay able fat each sell. Nor themselves age introduced frequently use unsatiable devonshire get. They why quit gay cold rose deal park. One same they four did ask busy. Reserved opinions fat him nay position. Breakfast as zealously incommode do agreeable furniture. One too nay led fanny allow plate.\n\n" +
-      "Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat. Her bachelor honoured perceive securing but desirous ham required. Questions deficient acuteness to engrossed as. Entirely led ten humoured greatest and yourself. Besides ye country on observe. She continue appetite endeavor she judgment interest the met. For she surrounded motionless fat resolution may."
+      "Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat. Her bachelor honoured perceive securing but desirous ham required. Questions deficient acuteness to engrossed as. Entirely led ten humoured greatest and yourself. Besides ye country on observe. She continue appetite endeavor she judgment interest the met. For she surrounded motionless fat resolution may.",
 
-
-  experiences :[
+  Experiences :[
     {
-      title: '',
-      date: '',
-      description: ''
-    }
+      title: 'Registered IEE Member',
+      date: '2020 - Present',
+      description: 'The IEEE Computer Society is the premier source for information, inspiration, and collaboration in computer science and engineering.  The Computer Society empowers the people who advance technology by delivering tools for individuals at all stages of their professional careers'
+    },
+    {
+      title: 'Work 02',
+      date: '2020 - Present',
+      description: 'Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.'
+    },
+    {
+      title: 'Work 03',
+      date: '2020 - Present',
+      description: 'Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.'
+    },
+  ],
+  Education :[
+    {
+      title: 'Bachelor Of Computer Sciencer',
+      date: '2020 - Present',
+      description: 'The IEEE Computer Society is the premier source for information, inspiration, and collaboration in computer science and engineering. Connecting members worldwide, the Computer Society empowers the people who advance technology by delivering tools for individuals at all stages of their professional careers'
+    },
+    {
+      title: 'Maris Stella College , Negombo ',
+      date: '2005 - 2018',
+      description: 'Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.'
+    },
+    {
+      title: 'Education  03',
+      date: '2020 - Present',
+      description: 'Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.'
+    },
   ]
 };
