@@ -1,10 +1,28 @@
 /*About section */
 .aboutme_text{
     color: darkslategrey;
-    font: smaller;
+    font: smaller !important;
     line-height: 22px !important;
     white-space: pre-line !important;
 }
 /*
 End of about me section
  */
+
+/* Timeline Section */
+
+resume_timeline .timeline_content .timeline_title{
+    font-size: 16px !important;
+    font-weight: 500 !important;
+
+}
+.resume_timeline .timeline_content .timeline_date{
+    color: darkslategrey;
+}
+.resume_timeline .timeline_content .timeline_description{
+    color: gray;
+    font-size: small;
+    margin-top: 6px;
+}
+/*  End of the Timeline Section */
+

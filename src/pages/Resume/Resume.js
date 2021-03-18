@@ -31,14 +31,14 @@ const Resume = () => {
                 <h6 className={'section_title_text'}>Resume </h6>
             </Grid>
             <Grid item xs ={12}>
-                <Grid container>
+                <Grid container className={'resume_timeline'}>
                     { /*Working and Volunteering Experiences  */}
                     <Grid item sm={12} md={6}>
                         <CostomTimeline title={'Work and Volunteering'} icon={<WorkIcon />}>
                             {resumeData.Experiences.map((Experiences) =>(
                                 <TimelineItem>
                                     <CostomTimelineSeparator />
-                                    <TimelineContent>
+                                    <TimelineContent className={'timeline_content'}>
                                         <Typography  className={'timeline_title'}>{Experiences.title}</Typography>
                                         <Typography variant={"caption"} className={'timeline_date'}>{Experiences.date}</Typography>
                                         <Typography variant={"body2"} className={'timeline_description'}>{Experiences.description}</Typography>
