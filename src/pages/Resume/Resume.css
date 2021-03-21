@@ -26,3 +26,32 @@ resume_timeline .timeline_content .timeline_title{
 }
 /*  End of the Timeline Section */
 
+
+/* Services */
+.service{
+    height: 100%;
+    text-align: center;
+}
+.service.service_title{
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 35px !important;
+    text-align: center ;
+}
+.service .service_description{
+    color: #989898 !important;
+    border-color: var(--main-color) !important;
+    margin-right:  5px !important;
+    text-align: center;
+}
+
+.service_icon > .MuiSvgIcon-root {
+    font-size: 46px !important;
+    margin-left: 0 !important;
+    font-weight: 300 !important;
+    color: darkslategrey !important;
+
+}
+
+/* End of Services */
+
