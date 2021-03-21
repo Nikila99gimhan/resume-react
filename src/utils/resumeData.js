@@ -1,4 +1,4 @@
-import { Facebook } from "@material-ui/icons";
+import {AssignmentOutlined, Facebook, WebOutlined} from "@material-ui/icons";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -56,7 +56,7 @@ export default {
   ],
   Education :[
     {
-      title: 'Bachelor Of Computer Sciencer',
+      title: 'Bachelor Of Computer Science',
       date: '2020 - Present',
       description: 'The IEEE Computer Society is the premier source for information, inspiration, and collaboration in computer science and engineering. Connecting members worldwide, the Computer Society empowers the people who advance technology by delivering tools for individuals at all stages of their professional careers'
     },
@@ -70,5 +70,53 @@ export default {
       date: '2020 - Present',
       description: 'Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.'
     },
-  ]
+  ],
+  services: [
+    {
+      title:'web development',
+      description: 'Expenses as material breeding insisted building to',
+      icon:<AssignmentOutlined/>
+    },
+    {
+      title:'Branding Identity',
+      description: 'Expenses as material breeding insisted building to',
+      icon:<WebOutlined/>
+    },
+    {
+      title:'web dev',
+      description: 'Expenses as material breeding insisted building to',
+      icon:<WebOutlined/>
+    },
+
+  ],
+
+  skills : [
+    {
+      title: "Front End",
+      description:[
+          "ReactJs",
+          "JavaScript",
+          "Bootstrap",
+          "Material UI",
+          "HTML/CSS",
+
+      ],
+    },
+    {
+      title: "Back END",
+      description: ["Java","Node JS","PHP"],
+    },
+    {
+      title: "DataBases",
+      description:["My SQL"],
+
+
+    },
+    {
+      title: "Version Control",
+      description: ["Git","Git Hub"],
+    },
+  ],
+
+
 };
