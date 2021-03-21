@@ -1,6 +1,6 @@
 import React from "react";
 import './Resume.css';
-import {Grid, Icon, Typography} from "@material-ui/core";
+import {Grid, Icon, Paper, Typography} from "@material-ui/core";
 import resumeData from "../../utils/resumeData";
 import CostomTimeline, { CostomTimelineSeparator } from "../../components/Timeline/Timeline";
 import WorkIcon from '@material-ui/icons/Work';
@@ -14,7 +14,7 @@ const Resume = () => {
       <>
         {/* About me*/}
 
-        <Grid container className='section pb_45'>
+        <Grid container className='section pb_45 pt_45 '>
             <Grid item className='section_title mb-30' >
                 <span></span>
                 <h6 className={'section_title_text'}>About Me </h6>
@@ -78,7 +78,7 @@ const Resume = () => {
                 <h6 className={'section_title_text'}>My Services </h6>
             </Grid>
             <Grid item xs={12}>
-                <Grid container>
+                <Grid container spacing={3} justify={'space-around'}>
                     {resumeData.services.map(service => (
                         <Grid item xs={12} sm={6} md={3}>
                             <div className={'service'}>
@@ -94,7 +94,24 @@ const Resume = () => {
 
         {/*Skills*/}
 
-        <Grid container className='section'></Grid>
+        <Grid container justify={'space-between'} className='section graybg pb_45 p_50 '>
+            {resumeData.skills.map(skill => (
+                <Grid item xs={12} sm={6} md={3}>
+                    <Paper elevation={0} className={'skill'}>
+                        <Typography variant={"h6"} className={'skills_title'}>
+                            {skill.title}
+                        </Typography>
+                        {skill.description.map(element => (
+                            <Typography variant={"body2"} className={'skill_description'}>
+                                <TimelineDot variant={"outlined"} className={'timeline_dot'}/>
+                                {element}
+                            </Typography>
+                        ))}
+                    </Paper>
+                </Grid>
+            ))}
+
+        </Grid>
 
         {/*Contact*/}
 
