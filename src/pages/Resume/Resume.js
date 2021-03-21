@@ -94,22 +94,28 @@ const Resume = () => {
 
         {/*Skills*/}
 
-        <Grid container justify={'space-between'} className='section graybg pb_45 p_50 '>
-            {resumeData.skills.map(skill => (
-                <Grid item xs={12} sm={6} md={3}>
-                    <Paper elevation={0} className={'skill'}>
-                        <Typography variant={"h6"} className={'skills_title'}>
-                            {skill.title}
-                        </Typography>
-                        {skill.description.map(element => (
-                            <Typography variant={"body2"} className={'skill_description'}>
-                                <TimelineDot variant={"outlined"} className={'timeline_dot'}/>
-                                {element}
-                            </Typography>
-                        ))}
-                    </Paper>
+        <Grid container  className='section graybg pb_45 p_50 '>
+            <Grid item xs={12}>
+                <Grid container justify={'space-between'} spacing={3}>
+                    {resumeData.skills.map(skill => (
+                        <Grid item xs={12} sm={6} md={3}>
+                            <Paper elevation={0} className={'skill'}>
+                                <Typography variant={"h6"} className={'skills_title'}>
+                                    {skill.title}
+                                </Typography>
+                                {skill.description.map(element => (
+                                    <Typography variant={"body2"} className={'skill_description'}>
+                                        <TimelineDot variant={"outlined"} className={'timeline_dot'}/>
+                                        {element}
+                                    </Typography>
+                                ))}
+                            </Paper>
+                        </Grid>
+                    ))}
+
                 </Grid>
-            ))}
+            </Grid>
+
 
         </Grid>
 
