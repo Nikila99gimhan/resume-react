@@ -121,7 +121,23 @@ const Resume = () => {
 
         {/*Contact*/}
 
-        <Grid container className='section'></Grid>
+        <Grid container className='section'>
+            {/* Content  form*/}
+            <Grid item xs={12} lg={7}>
+                <Grid container>
+                        <Grid item className='section_title mb-30' >
+                            <span></span>
+                            <h6 className={'section_title_text'}>Contact Form </h6>
+                        </Grid>
+                </Grid>
+
+            </Grid>
+
+            {/* Content  information*/}
+            <Grid item xs={12} lg={5}>
+
+            </Grid>
+        </Grid>
 
 
       </>
