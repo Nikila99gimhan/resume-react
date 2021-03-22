@@ -1,6 +1,6 @@
 import React from "react";
 import './Resume.css';
-import {Grid, Icon, Paper, Typography} from "@material-ui/core";
+import {Grid, Icon, Paper, TextField, Typography} from "@material-ui/core";
 import resumeData from "../../utils/resumeData";
 import CostomTimeline, { CostomTimelineSeparator } from "../../components/Timeline/Timeline";
 import WorkIcon from '@material-ui/icons/Work';
@@ -121,7 +121,36 @@ const Resume = () => {
 
         {/*Contact*/}
 
-        <Grid container className='section'></Grid>
+        <Grid container className='section pt_45 pb_45'>
+            {/* Content  form*/}
+            <Grid item xs={12} lg={7}>
+                <Grid container>
+                        <Grid item className='section_title mb-30' >
+                            <span></span>
+                            <h6 className={'section_title_text'}>Contact Form </h6>
+                        </Grid>
+                    <Grid item xs={12}>
+                        <Grid container>
+                            <Grid item xs={12} sm={6}>
+                                <TextField fullWidth name={'name'} label={'Name'} />
+                            </Grid>
+                            <Grid item xs={12} sm={6}>
+                                <TextField fullWidth name={'email'} label={'E-mail'} />
+                            </Grid>
+                            <Grid item xs={12} sm={6}>
+                                <TextField fullWidth name={'massage'} label={'Massage '} />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+            </Grid>
+
+            {/* Content  information*/}
+            <Grid item xs={12} lg={5}>
+
+            </Grid>
+        </Grid>
 
 
       </>
