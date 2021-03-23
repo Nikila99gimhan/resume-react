@@ -85,6 +85,24 @@ resume_timeline .timeline_content .timeline_title{
 
 /* End of Skills*/
 /* Content */
+.contactInfo_item{
+    font-size: 14px !important;
+    color: #787878;
+    line-height:34px !important;
+
+}
+.contactInfo_item > span{
+    color: black;
+    font-weight: 500;
+}
+.contactInfo_socialContainer{
+    margin: 25px;
+}
+.contactInfo_social > a  > .MuiSvgIcon-root{
+    font-size: 16px !important;
+    margin-right: 10px;
+    color: black;
+}
 
 
 /* End of Content*/

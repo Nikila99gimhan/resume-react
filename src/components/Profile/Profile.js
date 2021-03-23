@@ -59,7 +59,7 @@ const Portfolio = () => {
             />
           ))}
         </CostomTimeline>
-        <div className="button_container" style = {{display:"flex"}}>
+        <div className="button_container" style={{ display: "flex" }}>
           <CostomButton text={"Download CV"} icon={<GetAppIcon />} />
         </div>
       </div>
