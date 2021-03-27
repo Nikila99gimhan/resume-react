@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import './Portfolio.css'
-import {Grid} from "@material-ui/core";
+import {Grid, Tab, Tabs} from "@material-ui/core";
 
 const Portfolio = () => {
+
+    const [tabValue,setTabValue] = useState('All')
 
   return (
       <Grid container className={'section pb_45 pt_45'}>
@@ -13,7 +15,10 @@ const Portfolio = () => {
 
 
         {/*Tabs */}
-        <Grid item>
+        <Grid item xs={12} >
+            <Tabs value={tabValue} indicatorColor={'white'} className={'custom_tabs'} onCharge={(event,newValue) => setTabValue(newValue)}>
+                <Tab label={'All'} value={'All'} className={tabValue == 'All' ? 'customTabs_item_active' : 'customTabs_item'} />
+            </Tabs>
 
         </Grid>
       </Grid>

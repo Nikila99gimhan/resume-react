@@ -1,7 +1,8 @@
-import { AssignmentOutlined, Facebook, WebOutlined } from "@material-ui/icons";
+import {AssignmentOutlined, Facebook, Language, WebOutlined} from "@material-ui/icons";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+
 
 export default {
   name: "Nikila Fernando",
@@ -120,5 +121,54 @@ export default {
       title: "Version Control",
       description: ["Git", "Git Hub"],
     },
+  ],
+
+
+  portfolio: [
+    {
+      tag: 'React',
+      image: import('../assets/images/smash-3.jpg'),
+      title:'Personal Portfolio',
+      description:'This is dummy project description. Please fill it in ',
+      links:[
+        {link:'https://www.google.com', icon: <Language />},
+        {link: 'https://github.com/Nikila99gimhan', icon: <GitHubIcon />}
+
+      ],
+    },
+    {
+      tag: 'JAVA',
+      image: import('../assets/images/smash-3.jpg'),
+      title:'Java web',
+      description:'This is dummy project description. Please fill it in ',
+      links:[
+        {link:'https://www.google.com', icon: <Language />},
+        {link: 'https://github.com/Nikila99gimhan', icon: <GitHubIcon />}
+
+      ],
+    },
+    {
+      tag: 'React',
+      image: import('../assets/images/smash-3.jpg'),
+      title:'Simple chat APP',
+      description:'This is dummy project description. Please fill it in ',
+      links:[
+        {link:'https://www.google.com', icon: <Language />},
+        {link: 'https://github.com/Nikila99gimhan', icon: <GitHubIcon />}
+
+      ],
+    },
+    {
+      tag: 'React',
+      image: import('../assets/images/smash-3.jpg'),
+      title:'Simple chat APP',
+      description:'This is dummy project description. Please fill it in ',
+      links:[
+        {link:'https://www.google.com', icon: <Language />},
+        {link: 'https://github.com/Nikila99gimhan', icon: <GitHubIcon />}
+
+      ],
+    },
+
   ],
 };
