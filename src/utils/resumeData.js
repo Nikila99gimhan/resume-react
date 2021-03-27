@@ -124,7 +124,7 @@ export default {
   ],
 
 
-  portfolio: [
+  projects: [
     {
       tag: 'React',
       image: import('../assets/images/smash-3.jpg'),
@@ -148,7 +148,7 @@ export default {
       ],
     },
     {
-      tag: 'React',
+      tag: 'HTML / CSS',
       image: import('../assets/images/smash-3.jpg'),
       title:'Simple chat APP',
       description:'This is dummy project description. Please fill it in ',
