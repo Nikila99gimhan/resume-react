@@ -18,11 +18,16 @@ const Portfolio = () => {
 
         {/*Tabs */}
         <Grid item xs={12} >
-            <Tabs value={tabValue} indicatorColor={'white'} className={'custom_tabs'} onCharge={(event,newValue) => setTabValue(newValue)}>
-                <Tab label={'All'} value={'All'} className={tabValue == 'All' ? 'customTabs_item_active' : 'customTabs_item'} />
-                {[...new Set(resumeData.projects.map(item => item.tag))].map(tag => (
-                    <Tab label={tag} value={tag} className={tabValue == 'All' ? 'customTabs_item_active' : 'customTabs_item'} />
-                ))}
+            <Tabs value={tabValue} indicatorColor={"white"} className={'custom_tabs'} onChange={(event,newValue) => setTabValue(newValue)}>
+                <Tab label={"All"} value={"All"} className={tabValue == "All" ? "customTabs_item active" : "customTabs_item"}/>
+
+                {[...new Set(resumeData.projects.map((item) => item.tag))].map(
+                    (tag) => (
+                        <Tab label={tag} value={tag} className={tabValue == "All" ? "customTabs_item active" : "customTabs_item"} />
+                    )
+                )}
+
+
             </Tabs>
 
         </Grid>
@@ -31,26 +36,26 @@ const Portfolio = () => {
           <Grid item={12}>
               <Grid container spacing={2} >
                   {resumeData.projects.map(projects => (
-
                       <>
                           {tabValue == projects.tag || tabValue == 'All' ? (
-                              <Grid item >
+                              <Grid item>
                                   <Grow in timeout={1000}>
-                                      <Card>
+                                      <Card className={'customCard'} onClick={() => console.log("sdf")}>
                                           <CardActionArea>
-                                              <CardMedia />
+                                              <CardMedia className={'customCard_image'} image={projects.image} title={projects.title} />
                                               <CardContent>
-                                                  <Typography>{projects.title}</Typography>
-
-                                                  <Typography>{projects.description}</Typography>
+                                                  <Typography className={'customCard_title'}>{projects.title}</Typography>
+                                                  <Typography variant={"body2"} className={'customCard_description'}>{projects.description}</Typography>
                                               </CardContent>
                                           </CardActionArea>
                                       </Card>
                                   </Grow>
                               </Grid>
 
-                          ) :null}
-                          </>
+                              ) : null}
+                      </>
+
+
 
                   ))}
               </Grid>
