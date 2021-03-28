@@ -127,7 +127,7 @@ export default {
   projects: [
     {
       tag: 'React',
-      image: import('../assets/images/smash-3.jpg'),
+      image: "https://www.techrepublic.com/a/hub/i/r/2021/02/05/2c503225-0fb7-447f-8f34-facda0dc4472/resize/1200x/cda20270e6cc67f471f748edf15cba0f/smash-3.jpg",
       title:'Personal Portfolio',
       description:'This is dummy project description. Please fill it in ',
       links:[
@@ -138,7 +138,7 @@ export default {
     },
     {
       tag: 'JAVA',
-      image: import('../assets/images/smash-3.jpg'),
+      image:"https://www.techrepublic.com/a/hub/i/r/2021/02/05/2c503225-0fb7-447f-8f34-facda0dc4472/resize/1200x/cda20270e6cc67f471f748edf15cba0f/smash-3.jpg" ,
       title:'Java web',
       description:'This is dummy project description. Please fill it in ',
       links:[
@@ -149,7 +149,7 @@ export default {
     },
     {
       tag: 'HTML / CSS',
-      image: import('../assets/images/smash-3.jpg'),
+      image:'"https://www.techrepublic.com/a/hub/i/r/2021/02/05/2c503225-0fb7-447f-8f34-facda0dc4472/resize/1200x/cda20270e6cc67f471f748edf15cba0f/smash-3.jpg' ,
       title:'Simple chat APP',
       description:'This is dummy project description. Please fill it in ',
       links:[
@@ -160,7 +160,7 @@ export default {
     },
     {
       tag: 'React',
-      image: import('../assets/images/smash-3.jpg'),
+      image: "https://www.techrepublic.com/a/hub/i/r/2021/02/05/2c503225-0fb7-447f-8f34-facda0dc4472/resize/1200x/cda20270e6cc67f471f748edf15cba0f/smash-3.jpg",
       title:'Simple chat APP',
       description:'This is dummy project description. Please fill it in ',
       links:[
