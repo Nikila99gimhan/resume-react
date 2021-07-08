@@ -7,7 +7,9 @@ import {
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import { Image } from "react-bootstrap";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   name: "Nikila Fernando",
   title: "Undergraduate",
@@ -130,7 +132,7 @@ export default {
   projects: [
     {
       tag: "React",
-      image: import("../assets/images/bg.png"),
+      image:"https://user-images.githubusercontent.com/64256212/111592499-dfb3c980-87ee-11eb-8389-39077af5aa19.png",
       title: "Personal Portfolio",
       caption: "A Short description",
       description: "This is dummy project description. Please fill it in ",
