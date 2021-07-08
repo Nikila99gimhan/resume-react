@@ -53,7 +53,7 @@ const Portfolio = () => {
                   {resumeData.projects.map(projects => (
                       <>
                           {tabValue == projects.tag || tabValue == 'All' ? (
-                              <Grid item xs={12} sm={6} md={4}>
+                              <Grid item xs={12} sm={12} md={12}>
                                   <Grow in timeout={1000}>
                                       <Card className={'customCard'} onClick={() => setProjectDialog(projects)}>
                                           <CardActionArea>
@@ -79,7 +79,7 @@ const Portfolio = () => {
               <DialogTitle onClose={() => setProjectDialog(false)}>{projectDialog.title}</DialogTitle>
 
               <img src={projectDialog.image } alt={""} className={'projectDialog_image'}/>
-              <DialogContent style={{height:"80hv"}} >
+              <DialogContent style={{ height:"80hv"}}>
                   <Typography className={'projectDialog_description'}>{projectDialog.description}</Typography>
               </DialogContent>
               <DialogActions className={'projectDialog_actions'}>
